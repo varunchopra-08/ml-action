@@ -1,0 +1,2 @@
+deploy: # this job runs completely on own runner
+  needs: ml_run # this job depends on the ml_run job
