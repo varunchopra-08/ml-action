@@ -28,18 +28,5 @@ accuracy = accuracy_score(y_test, y_pred)
 # Print the accuracy
 print ('Accuracy: ', accuracy*100)
 
-cm = confusion_matrix(y_test,y_pred)
-
-print('\nConfusion Matrix: \n', cm)
-
-print('\nIndividual elements: \n')
-print(f'True Positives (Class 0): {cm[0,0]}')
-print(f'True Positives (Class 1): {cm[1,1]}')
-print(f'True Positives (Class 2): {cm[2,2]}')
-
-print('This is print statement from print branch')
-print('This is print statement from print branch')
-print('This is print statement from print branch')
-
 
 
