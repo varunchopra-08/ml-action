@@ -1,7 +1,7 @@
 name: ML Run
 # on mentions a trigger for the workflow
 on: 
-    push: # when a push is made to the main branch of the repository
+    workflow_dispatch: # when a push is made to the main branch of the repository
 jobs:
   ml_run:
     runs-on: ubuntu-latest # runs the workflow on the latest ubuntu version
@@ -38,7 +38,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          
+
       - name: Deploy
         run:  echo "Deployement of the model"
 
