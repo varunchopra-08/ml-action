@@ -40,4 +40,5 @@ jobs:
           pip install -r requirements.txt
           
       - name: Run the Script 
-        run : python ml_example.py
+        run : 
+          python ml_example.py
